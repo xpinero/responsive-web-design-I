@@ -75,10 +75,15 @@ nav {
 	display: flex;
 }
 
+.links {
+	display: flex;
+	width: 100%;
+}
+
 nav a {
 	width: 100%;
 	text-decoration: none;
-	color: grey;
+	color: black;
 	justify-content: space-evenly;
 }
 
@@ -125,9 +130,12 @@ header img {
 }
 
 .start-button {
-	height: 4em;
-	width: 20em;
-	margin: 2em 0 0 5em;
+	font-size: 30px;
+	background-image: radial-gradient(grey, white, gray);
+	height: 2em;
+	width: 8em;
+	margin: 1em 0 0 1.5em ;
+	border-radius: 12px;
 }
 .boxes button {
 	margin: 10px;
@@ -142,6 +150,10 @@ h1 {
 
 h2 {
 	font-size: 2em;
+}
+
+hr {
+	border: 2px solid black;
 }
 
 .top-section {
@@ -172,8 +184,9 @@ h2 {
 
 .contact {
 	text-align: left;
-	width: 15em;
+	width: 20em;
 	margin-top: 2em;
+	line-height: 1.6;
 }
 
 .facts {
@@ -194,4 +207,64 @@ h2 {
 	width: 100%;
 	text-align: center;
 	margin: 2em 0;
+}
+
+@media (max-width: 800px) {
+	header img {
+		display: none;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.links {
+		width: 100%;
+		margin-top: 1.2em;
+	}
+}
+
+@media (max-width: 500px) {
+	.links {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.links a {
+		padding: 1em;
+		border-bottom: darkgrey solid 2px;
+	}
+
+	.links a:first-child {
+		border-top: darkgrey solid 2px;
+	}
+
+	.header-index {
+		margin: 4em 0;
+	}
+
+	.top-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.top-class {
+		width: 100%;
+	}
+
+	.bottom-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.bottom-class {
+		width: 100%;
+		margin: 2em 0;
+	}
 }

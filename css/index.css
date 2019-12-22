@@ -131,7 +131,7 @@ header img {
 
 .start-button {
 	font-size: 30px;
-	background-image: radial-gradient(grey, white, gray);
+	background-image: radial-gradient(#A4FFC4, white, #5BDFFF);
 	height: 2em;
 	width: 8em;
 	margin: 1em 0 0 1.5em ;
